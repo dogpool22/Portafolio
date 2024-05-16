@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Desarrollador Android</title>
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  .profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-  }
-  .developer-info {
-    text-align: center;
-  }
-  .developer-info h1 {
-    font-size: 2em;
-  }
-  .developer-info p {
-    font-size: 1em;
-  }
-  .navigation-menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1em;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de [Tu Nombre]</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="navigation-menu">
-  <!-- Icono del menú aquí -->
-</div>
-<div class="container">
-  <img src="profile-pic.jpg" alt="Foto de perfil" class="profile-pic">
-  <div class="developer-info">
-    <h1>Tercer David Ahuite Murayari</h1>
-    <p>Me gusta crear productos frontend sólidos y escalables con excelentes experiencias de usuario.</p>
-    <p>Experto comprobado en la mejora de procesos para optimizar la creación de productos.</p>
-  </div>
-</div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>Hola, soy [Tu Nombre]</h1>
+        <p>Desarrollador/a web con experiencia en...</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <!-- Repetir para cada proyecto -->
+        <div class="proyecto">
+            <h3>Nombre del Proyecto</h3>
+            <img src="ruta-a-imagen.jpg" alt="Imagen del Proyecto">
+            <p>Descripción del proyecto.</p>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>[Breve biografía]</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="ruta-a-script-de-envio">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
