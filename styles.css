@@ -66,3 +66,7 @@ footer {
     text-align: center;
     color: #27213C; /* Color del texto del footer */
 }
+
+section#inicio p {
+    font-size: 30px; /* Ajusta este valor según tus necesidades */
+}
