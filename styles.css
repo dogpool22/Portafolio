@@ -1,12 +1,16 @@
+/* Importar la fuente Poppins de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #A6A57A; /* Color de texto */
+    background-color: #27213C; /* Color de fondo */
 }
 
 header {
-    background-color: #f4f4f4;
+    background-color: #A6A57A; /* Color del fondo del header */
     padding: 10px 0;
 }
 
@@ -15,6 +19,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -23,7 +28,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #27213C; /* Color de los enlaces */
+    font-weight: 600;
 }
 
 section {
@@ -31,12 +37,17 @@ section {
     text-align: center;
 }
 
+section#inicio {
+    color: #A6A57A;
+}
+
 .proyecto {
     margin: 20px 0;
 }
 
 footer {
-    background-color: #f4f4f4;
+    background-color: #A6A57A; /* Color del fondo del footer */
     padding: 10px 0;
     text-align: center;
+    color: #27213C; /* Color del texto del footer */
 }
