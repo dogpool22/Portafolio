@@ -41,7 +41,22 @@ section#inicio {
     color: #A6A57A;
 }
 
+.perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
 .proyecto {
+    margin: 20px 0;
+}
+
+.imagen-proyecto {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
     margin: 20px 0;
 }
 
