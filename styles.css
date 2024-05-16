@@ -68,5 +68,10 @@ footer {
 }
 
 section#inicio p {
-    font-size: 30px; /* Ajusta este valor según tus necesidades */
+    font-size: 20px; /* Ajusta este valor según tus necesidades */
 }
+
+section#inicio h1 {
+    font-size: 30px;
+}
+
