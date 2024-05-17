@@ -143,3 +143,11 @@ main {
     flex: 1;
 }
 
+main {
+    flex: 1;
+    margin-bottom: 600px; /* Agrega un margen inferior de 600px al main */
+}
+
+.placeholder {
+    height: 100px; /* Espacio vacío de 300px dentro del main */
+}
