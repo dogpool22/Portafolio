@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #A6A57A; /* Color del fondo del header */
+    background-color: rgba(166, 165, 122, 0.8); /* Color del fondo del header con transparencia */
     padding: 10px 0;
 }
 
@@ -67,6 +67,9 @@ footer {
     padding: 10px 0;
     text-align: center;
     color: #27213C; /* Color del texto del footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 section#inicio p {
@@ -96,9 +99,31 @@ p {
 }
 
 /* Para dispositivos con un ancho de pantalla de hasta 480px (teléfonos) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 340px) {
     p {
         width: 100%; /* Cambiar el ancho del contenedor al 100% */
+    }
+    header {
+        padding: 5px 0; /* Ajusta el padding del header para pantallas más pequeñas */
+    }
+    nav ul {
+        flex-direction: column; /* Coloca los elementos de la navegación en una columna */
+    }
+    nav ul li {
+        margin: 5px 0; /* Ajusta el margen de los elementos de la navegación */
+    }
+    section {
+        padding: 10px;
+    }
+    section#inicio h1 {
+        font-size: 24px; /* Ajusta el tamaño de la fuente del título */
+    }
+    section#inicio p {
+        font-size: 16px; /* Ajusta el tamaño de la fuente del párrafo */
+    }
+    .perfil {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -116,15 +141,5 @@ body {
 
 main {
     flex: 1;
-}
-
-footer {
-    background-color: #A6A57A; /* Color del fondo del footer */
-    padding: 10px 0;
-    text-align: center;
-    color: #27213C; /* Color del texto del footer */
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
