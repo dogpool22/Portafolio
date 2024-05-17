@@ -150,15 +150,17 @@ main {
     align-items: center;
     margin-top: 20px;
     height: 100%; /* Ocupa toda la altura disponible */
+    position: relative; /* Asegura que los elementos hijos puedan usar z-index */
 }
 
 /* Carrusel de imágenes */
 .carousel {
     width: 100%;
-    height: 700px; /* Altura fija para el carrusel */
+    height: 500px; /* Altura fija para el carrusel */
     overflow: hidden;
     position: relative;
     margin-bottom: 20px;
+    z-index: 0; /* Carrusel en un nivel inferior */
 }
 
 .carousel-images {
@@ -181,7 +183,13 @@ main {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    max-width: 100%; /* Ancho máximo del menú */
+    position: absolute; /* Para posicionarlo sobre el carrusel */
+    top: 50%; /* Posicionar en el 50% desde arriba */
+    transform: translateY(-50%); /* Ajustar posición vertical */
+    z-index: 1; /* Asegura que el menú esté por encima del carrusel */
 }
+
 
 .card {
     background-color: #A6A57A;
@@ -191,6 +199,7 @@ main {
     width: 250px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: calc(33.33% - 40px); /* Ancho máximo de cada carta, ajusta según el número de cartas */
 }
 
 /* Estilos adicionales para el carrusel de imágenes */
@@ -201,4 +210,5 @@ main {
 .carousel-images img.visible {
     display: block;
 }
+
 
