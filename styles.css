@@ -75,3 +75,12 @@ section#inicio h1 {
     font-size: 30px;
 }
 
+p {
+    text-align: justify; /* Alinea el texto automáticamente */
+    text-align-last: left; /* Asegura que la última línea esté alineada a la izquierda */
+    hyphens: auto; /* Habilita el corte de palabras automáticas para evitar que las palabras se desborden del contenedor */
+    width: 80%; /* Define el ancho del contenedor al 80% del ancho del contenedor principal */
+    max-width: 600px; /* Define el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
