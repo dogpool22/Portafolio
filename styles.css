@@ -1,3 +1,5 @@
+/* CSS actualizado con media queries para hacer la página responsive */
+
 /* Importar la fuente Poppins de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
@@ -82,5 +84,21 @@ p {
     width: 80%; /* Define el ancho del contenedor al 80% del ancho del contenedor principal */
     max-width: 600px; /* Define el ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Media queries para hacer la página responsive */
+
+/* Para dispositivos con un ancho de pantalla de hasta 768px (tabletas) */
+@media only screen and (max-width: 768px) {
+    p {
+        width: 90%; /* Cambiar el ancho del contenedor al 90% */
+    }
+}
+
+/* Para dispositivos con un ancho de pantalla de hasta 480px (teléfonos) */
+@media only screen and (max-width: 480px) {
+    p {
+        width: 100%; /* Cambiar el ancho del contenedor al 100% */
+    }
 }
 
