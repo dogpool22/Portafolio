@@ -12,6 +12,10 @@ body {
 header {
     background-color: rgba(166, 165, 122, 0.8); /* Color del fondo del header con transparencia */
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Asegura que el header esté por encima de otros elementos */
 }
 
 nav ul {
@@ -198,16 +202,15 @@ main {
     padding: 20px;
     border-radius: 10px;
     color: #27213C;
-    width: auto;
+    width: 150px; /* Ancho fijo */
+    height: 250px; /* Altura fija */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: calc(33.33% - 90px); /* Ancho máximo de cada carta, ajusta según el número de cartas */
-    height: auto; /* Ajusta la altura automáticamente */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 10px;
+    transition: all 0.3s ease; /* Transición para suavizar el cambio de tamaño */
+    position: relative; /* Ajustar la posición del contenido */
     opacity: 0.8; /* Nivel de transparencia inicial */
-    transition: opacity 0.3s ease; /* Transición para suavizar el cambio de opacidad */
+
 }
 
 .card:hover {
@@ -225,6 +228,35 @@ main {
     border-radius: 10px;
     transition: width 0.3s ease, height 0.3s ease; /* Transiciones para un cambio suave */
 }
+
+.description {
+    font-size: 16px; /* Tamaño de fuente inicial */
+    transition: font-size 0.3s ease; /* Transición para suavizar el cambio de tamaño del texto */
+    position: absolute; /* Posicionar la descripción */
+    bottom: 20px; /* Colocar la descripción desde el borde inferior */
+    left: 50%; /* Alinear la descripción horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    width: 150px; /* Anchura de la descripción */
+    height: 250px; /* Altura de la descripción */
+    overflow: auto; /* Agregar desplazamiento si el contenido excede el tamaño */
+}
+
+/* Estilos para la descripción oculta */
+.description.hidden {
+    display: none; /* Oculta la descripción por defecto */
+}
+
+
+.card.clicked .card-img {
+    display: none;
+}
+
+.card.clicked .description {
+    display: block;
+    opacity: 1;
+    font-size: 12px;
+}
+
 
 /* Media queries para hacer la página responsive */
 @media screen and (max-width: 1366px) {

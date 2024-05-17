@@ -1,5 +1,5 @@
-// scripts.js
-// Aquí puedes añadir JavaScript para funcionalidades adicionales si es necesario
+
+
 document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     const images = document.querySelectorAll(".carousel-images img");
@@ -12,19 +12,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     images[currentIndex].classList.add("visible");
-    setInterval(showNextImage, 5000); // Cambia la imagen cada 3 segundos
-});
+    setInterval(showNextImage, 5000); // Cambia la imagen cada 5 segundos
 
-// JavaScript para agregar o quitar la clase 'slide' al menú
-/*document.addEventListener("DOMContentLoaded", function() {
-    const menu = document.querySelector(".cards-menu");
-    const toggleButton = document.querySelector("#toggle-menu");
+    const cards = document.querySelectorAll(".card");
 
-    toggleButton.addEventListener("click", function() {
-        menu.classList.toggle("slide");
+    cards.forEach(card => {
+        card.addEventListener("click", function() {
+            card.classList.toggle("clicked");
+        });
     });
 });
-*/
+
+
+
+
+
 
 
 
