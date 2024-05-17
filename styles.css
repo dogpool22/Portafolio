@@ -1,5 +1,3 @@
-/* CSS actualizado con media queries para hacer la página responsive */
-
 /* Importar la fuente Poppins de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
@@ -90,15 +88,12 @@ p {
 }
 
 /* Media queries para hacer la página responsive */
-
-/* Para dispositivos con un ancho de pantalla de hasta 768px (tabletas) */
 @media only screen and (max-width: 768px) {
     p {
         width: 90%; /* Cambiar el ancho del contenedor al 90% */
     }
 }
 
-/* Para dispositivos con un ancho de pantalla de hasta 480px (teléfonos) */
 @media only screen and (max-width: 340px) {
     p {
         width: 100%; /* Cambiar el ancho del contenedor al 100% */
@@ -141,15 +136,11 @@ body {
 
 main {
     flex: 1;
-}
-
-main {
-    flex: 1;
     margin-bottom: 600px; /* Agrega un margen inferior de 600px al main */
 }
 
 .placeholder {
-    height: 100px; /* Espacio vacío de 300px dentro del main */
+    height: 100px; /* Espacio vacío de 100px dentro del main */
 }
 
 /* Estilos para la sección de habilidades */
@@ -158,12 +149,13 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    height: 100%; /* Ocupa toda la altura disponible */
 }
 
 /* Carrusel de imágenes */
 .carousel {
     width: 100%;
-    max-width: 600px;
+    height: 700px; /* Altura fija para el carrusel */
     overflow: hidden;
     position: relative;
     margin-bottom: 20px;
@@ -172,10 +164,14 @@ main {
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%; /* Ocupa toda la altura disponible */
 }
 
 .carousel img {
     width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que las imágenes mantengan su proporción y cubran el área */
     flex-shrink: 0;
 }
 
@@ -197,6 +193,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos adicionales para el carrusel de imágenes */
 .carousel-images img {
     display: none;
 }
@@ -204,3 +201,4 @@ main {
 .carousel-images img.visible {
     display: block;
 }
+

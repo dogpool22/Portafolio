@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     images[currentIndex].classList.add("visible");
-    setInterval(showNextImage, 3000); // Cambia la imagen cada 3 segundos
+    setInterval(showNextImage, 5000); // Cambia la imagen cada 3 segundos
 });
 
