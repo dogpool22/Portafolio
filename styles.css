@@ -151,3 +151,56 @@ main {
 .placeholder {
     height: 100px; /* Espacio vacío de 300px dentro del main */
 }
+
+/* Estilos para la sección de habilidades */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Carrusel de imágenes */
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Menú tipo cartas */
+.cards-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #A6A57A;
+    padding: 20px;
+    border-radius: 10px;
+    color: #27213C;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images img {
+    display: none;
+}
+
+.carousel-images img.visible {
+    display: block;
+}
