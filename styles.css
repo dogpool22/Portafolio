@@ -102,3 +102,29 @@ p {
     }
 }
 
+/* Estilos para mantener el footer en la parte inferior de la página */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #A6A57A; /* Color del fondo del footer */
+    padding: 10px 0;
+    text-align: center;
+    color: #27213C; /* Color del texto del footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
