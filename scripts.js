@@ -15,3 +15,16 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(showNextImage, 5000); // Cambia la imagen cada 3 segundos
 });
 
+// JavaScript para agregar o quitar la clase 'slide' al menú
+/*document.addEventListener("DOMContentLoaded", function() {
+    const menu = document.querySelector(".cards-menu");
+    const toggleButton = document.querySelector("#toggle-menu");
+
+    toggleButton.addEventListener("click", function() {
+        menu.classList.toggle("slide");
+    });
+});
+*/
+
+
+

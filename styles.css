@@ -140,7 +140,7 @@ main {
 }
 
 .placeholder {
-    height: 100px; /* Espacio vacío de 100px dentro del main */
+    height: 91px; /* Espacio vacío de 100px dentro del main */
 }
 
 /* Estilos para la sección de habilidades */
@@ -161,6 +161,7 @@ main {
     position: relative;
     margin-bottom: 20px;
     z-index: 0; /* Carrusel en un nivel inferior */
+    border-radius: 20px; /* Ajusta el valor según la curvatura deseada */
 }
 
 .carousel-images {
@@ -183,11 +184,13 @@ main {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    max-width: 100%; /* Ancho máximo del menú */
-    position: absolute; /* Para posicionarlo sobre el carrusel */
+   /* max-width: 100%;  Ancho máximo del menú */
+    position: absolute; /* Para posicionarlo dentro del carrusel */
     top: 50%; /* Posicionar en el 50% desde arriba */
     transform: translateY(-50%); /* Ajustar posición vertical */
     z-index: 1; /* Asegura que el menú esté por encima del carrusel */
+    align-items: center; /* Alineación vertical */
+    justify-content: center; /* Alineación horizontal */
 }
 
 
@@ -196,10 +199,12 @@ main {
     padding: 20px;
     border-radius: 10px;
     color: #27213C;
-    width: 250px;
+    width: auto;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: calc(33.33% - 40px); /* Ancho máximo de cada carta, ajusta según el número de cartas */
+    max-width: calc(10% - 10px); /* Ancho máximo de cada carta, ajusta según el número de cartas */
+    height: 350px;
+    
 }
 
 /* Estilos adicionales para el carrusel de imágenes */
@@ -210,5 +215,36 @@ main {
 .carousel-images img.visible {
     display: block;
 }
+
+/* Media query para pantallas medianas */
+@media only screen and (max-width: 768px) {
+    .card {
+        height: 200px; /* Ajusta la altura según sea necesario */
+    }
+}
+
+/* Media query para pantallas pequeñas */
+@media only screen and (max-width: 480px) {
+    .card {
+        height: 150px; /* Ajusta la altura según sea necesario */
+    }
+}
+
+/* Media query para pantallas extra pequeñas */
+@media only screen and (max-width: 320px) {
+    .card {
+        height: 120px; /* Ajusta la altura según sea necesario */
+    }
+}
+
+/* Media query para pantallas extra pequeñas */
+@media only screen and (max-width: 299px) {
+    .card {
+        height: 80px; /* Ajusta la altura según sea necesario */
+    }
+}
+
+
+
 
 
